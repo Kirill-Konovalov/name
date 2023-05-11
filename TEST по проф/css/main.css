@@ -1,0 +1,162 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* transition: 0.5s ease-in-out; */
+    color: #000000;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+/* добавим плавность переходов для всех элементов страницы*/
+}
+ ul {
+	list-style: none;
+ }
+ a {
+	text-decoration: none;
+	outline: none;
+ }
+ img {
+	display: block;
+	width: 100%;
+	height: 100%;
+ }
+ nav ul {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-wrap: wrap;
+    border-bottom: 1px solid #327e95 ;
+
+ }
+
+ nav ul li {
+ 	align-self: center;
+	font-size: 24px;
+ }
+
+.btn, .btnFurther, .btnBack{
+  font-size: 2vw;
+  display: inline-block;
+  /* Строчно-блочный элемент */
+  background: #ffffff;
+  color: #327e95;
+  /* Серый цвет фона */
+  padding: 1rem 2rem;
+  /* Поля вокруг текста */
+  text-decoration: none;
+  /* Убираем подчёркивание */
+  border-radius: 14px;
+  border: 1px solid #327e95;
+  /* Белый цвет текста */
+  text-align: center;
+  margin-right: 10px;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover, .btnFurther:hover, .btnBack:hover{
+  font-size: 2vw;
+  display: inline-block;
+  /* Строчно-блочный элемент */
+  background: #327e95;
+  color: #fff;
+  /* Серый цвет фона */
+  padding: 1rem 2rem;
+  /* Поля вокруг текста */
+  text-decoration: none;
+  /* Убираем подчёркивание */
+  border-radius: 14px;
+  border: 1px solid #327e95;
+  /* Белый цвет текста */
+  text-align: center;
+  margin-right: 10px;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+header {
+  height: 100px;
+}
+.container {
+  margin-top: 100px;
+  margin-left: 13%;
+  margin-right: 13%;
+  background-color: #ffffff;
+}
+h1 {
+  text-align: center;
+  font-size: 3vw;
+}
+.qestions{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vw;
+}
+label {
+  margin-bottom: 1%;
+}
+input{
+  margin-right: 5px;
+}
+.transition{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 5%;
+}
+.transition h2{
+  align-self: center;
+  margin: 0 4%;
+  font-size: 2vw;
+}
+.container .btnFurther, .btnBack{
+  font-size: 20px;
+  margin: 0;
+}
+
+
+._active{
+  display: none;
+}
+
+
+footer {
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	background: #327E95;
+	color: white;
+	margin-top: 20%;
+}
+.footer-col span{
+	position: table;
+	font-size: x-small;
+	color: #fff;
+	margin-left: 10%;
+}
+.footer-col {
+	width: 33.3333333333%;
+	float: left;
+	line-height: 80px;
+}
+.footer-col a {
+	color: white;
+}
+.footer-col:last-child {
+	text-align: right;
+	padding-right: 15px;
+}
+.social-bar-wrap {
+	text-align: center;
+}
+.social-bar-wrap a {
+	padding-right: 7px;
+	font-size: 18px;
+}
+.posts-list {
+	display: inline-block;
+	width: 80%;
+	margin-left: 10%;
+	max-height: 50%;
+	margin-bottom: 10rem;
+}
