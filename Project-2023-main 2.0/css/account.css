@@ -1,0 +1,82 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out;
+	/* добавим плавность переходов для всех элементов страницы*/
+ }
+ ul {
+	list-style: none;
+ }
+ a {
+	text-decoration: none;
+	outline: none;
+ }
+ img {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+ }
+
+ body {
+	font-family: 'Open Sans', arial, sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	color: #373737;
+	background: #f7f7f7;
+	height: 100%;
+ }
+ /* стилевой класс, который управляет шириной контейнера сетки*/
+ .container {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+ }
+ header {
+	display: table;
+	width: 100%;
+	background: white;
+	box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
+	padding: 15px 0;
+	position: relative;
+ }
+ /* логотип */
+ .logo {
+	display: block;
+	float: left;
+ }
+ .logo span {
+	color: white;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	margin: 5px 0;
+	text-align: center;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, .4);
+	background: #EF5A42;
+ }
+ /* меню */
+ #menu {
+	float: right;
+ }
+ #menu li {
+	display: inline-block;
+	margin-right: 30px;
+ }
+ #menu a {
+	color: #111;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	display: block;
+	line-height: 40px;
+ }
+ #menu a:hover {
+	color: #EF5A42;
+ }
+ #menu.active {
+	max-height: 123px;
+ }

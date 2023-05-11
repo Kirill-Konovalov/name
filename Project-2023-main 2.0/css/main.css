@@ -1,0 +1,500 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out;
+	color: #000000;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	/* добавим плавность переходов для всех элементов страницы*/
+ }
+ ul {
+	list-style: none;
+ }
+ a {
+	text-decoration: none;
+	outline: none;
+ }
+ img {
+	display: block;
+	width: 100%;
+	height: 100%;
+ }
+ nav ul {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-wrap: wrap;
+
+ }
+
+ nav ul li {
+ 	align-self: center;
+	font-size: 24px;
+ }
+ .btn{
+	font-size: calc((100vw - 480px)/(1280 - 480) * (25.6 - 9.55) + 8.5px);
+    display: inline-block;
+    /* Строчно-блочный элемент */
+    background: #ffffff;
+    color: #327E95;
+    /* Серый цвет фона */
+    padding: 1rem 2rem;
+    /* Поля вокруг текста */
+    text-decoration: none;
+    /* Убираем подчёркивание */
+    border-radius: 14px;
+    border: 1px solid #327E95;
+    /* Белый цвет текста */
+    text-align: center;
+	margin-right: 10px;
+	font-weight: 700;
+}
+ .btn:hover {
+	font-size: calc( (100vw - 480px)/(1280 - 480) * (25.6 - 9.55) + 8.5px);
+ 	display: inline-block;
+ 	/* Строчно-блочный элемент */
+ 	background: #327E95;
+ 	color: #fff;
+ 	/* Серый цвет фона */
+ 	padding: 1rem 2rem;
+ 	/* Поля вокруг текста */
+ 	text-decoration: none;
+ 	/* Убираем подчёркивание */
+ 	border-radius: 14px;
+ 	border: 1px solid #327E95;
+ 	/* Белый цвет текста */
+ 	text-align: center;
+ 	margin-right: 10px;
+	font-weight: 700;
+ }
+#post-1 .btn{
+	background: #327E95;
+	color: #fff;
+	border: 2px solid #327E95;
+}
+#post-1 .btn:hover {
+	background: #ffffff;
+	color: #327E95;
+	border: 2px solid #327E95;
+}
+#btnOnMain {
+	position: absolute;
+	margin-top: 27%;
+}
+/* #post-1{
+	display: flex;
+	justify-content: center;
+	align-content: end;
+	flex-wrap: wrap; */
+ body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	color: #000000;
+	background: #ffffff;
+	height: 100%;
+ }
+ /* стилевой класс, который управляет шириной контейнера сетки*/
+ .container {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+ }
+ header {
+	display: table;
+	width: 100%;
+	background: white;
+	box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
+	padding: 0px;
+	position: relative;
+ }
+ /* логотип */
+ .logo {
+	display: block;
+	float: left;
+ }
+ .logo span {
+	color: white;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	margin: 5px 0;
+	text-align: center;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, .4);
+	background: #EF5A42;
+ }
+ /* меню */
+ #menu {
+	float: right;
+ }
+ #menu li {
+	display: inline-block;
+	margin-right: 30px;
+ }
+
+ #post-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+ .posts {
+	margin-bottom: 30px;
+	width: 100%;
+ }
+ footer {
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	background: #327E95;
+	color: white;
+	margin-top: 20%;
+ }
+ .footer-col span{
+	position: table;
+	font-size: x-small;
+	color: #fff;
+	margin-left: 10%;
+ }
+ .footer-col {
+	width: 33.3333333333%;
+	float: left;
+	line-height: 80px;
+ }
+ .footer-col a {
+	color: white;
+ }
+ .footer-col:last-child {
+	text-align: right;
+	padding-right: 15px;
+ }
+ .social-bar-wrap {
+	text-align: center;
+ }
+ .social-bar-wrap a {
+	padding-right: 7px;
+	font-size: 18px;
+ }
+ .posts-list {
+	display: inline-block;
+	width: 80%;
+	margin-left: 10%;
+	max-height: 50%;
+	margin-bottom: 10rem;
+ }
+ /* блок для статьи */
+ .post {
+	margin-bottom: 15rem;
+ }
+ .post-content {
+	line-height: 110%;
+	font-size: calc( (100vw - 480px)/(1280 - 300) * (25.6 - 9.55) + 8.5px);
+	width: 50%;
+	float: right;
+ }
+ .post-image {
+	width: 47%;
+	float: left;
+ }
+ .posts-list-2 {
+	display: inline-block;
+	width: 80%;
+	margin-left: 10%;
+	max-height: 50%;
+	margin-bottom: 15rem;
+ }
+ .post-content-2 {
+	line-height: 110%;
+	font-size: calc( (100vw - 480px)/(1280 - 300) * (30 - 12) + 8.5px);
+	width: 50%;
+	float: left;
+	padding-left: 15px;
+	
+ }
+ .post-image-2 {
+	width: 50%;
+	float: right;
+ }
+ .posts-list-3{
+	margin-bottom: 7%;
+ }
+ .post-image-3 {
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100%;
+ }
+ .postMain-image{
+	width: 100%;
+ }
+ .posts-list-4{
+	margin-bottom: 7%;
+ }
+ .post-image-4 {
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100%;
+ }
+ .post-image-5 {
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100%;
+ }
+
+
+/* Список профессий */
+#container {
+	margin: auto;
+	margin-left: 13%;
+	margin-right: 13%;
+}
+
+h1 {
+	font-size: 48px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.subgroup h2 {
+	align-self: flex-start;
+	font-size: 38px;
+}
+
+.headlines {
+	align-self: center;
+	margin-left: 30px;
+}
+
+.headlines p {
+	font-size: 20px;
+	color: #585858;
+}
+
+h3 {
+	font-size: 31px;
+	font-weight: 400;
+	margin-bottom: 55px;
+}
+.content-child h3{
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+#listProfession {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subgroup, .subgroup-2, .subgroup-3{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	border: 2px solid black;
+	border-radius: 50px;
+	margin-bottom: 4%;
+}
+
+.headlines {
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+#conteiner{
+	width: 80%;
+	margin-left: 10%;
+}
+.content, .content-2, .content-3{
+	display: none;
+}
+
+.subgroup h2, .subgroup-2 h2, .subgroup-3 h2{
+	font-size: calc((100vw - 480px)/(1280 - 300) * (30 - 12) + 16px);
+	font-weight: 700;
+}
+
+.subgroup p, .subgroup-2 p, .subgroup-3 p{
+	font-size: calc((100vw - 480px)/(1280 - 300) * (30 - 12) + 8px);
+	color: gray;
+}
+
+.subgroup button, .subgroup-2 button, .subgroup-3 button{
+	border-radius: 50px;
+	max-height: 100px;
+	min-width: 100px;
+}
+
+.dropbtn, .dropbtnTwo, .dropbtnThree {
+	background-color: white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100px;
+}
+.dropbtn img, .dropbtnTwo img, .dropbtnThree img{
+	width: 50%;
+}
+._activeTwo {
+	height: max-content;
+}
+.headlines p {
+	color: rgb(52, 51, 51);
+}
+
+.subgroup ._active {
+	display: block;
+}
+.subgroup-2 ._active{
+	display: block;
+}
+.subgroup-3 ._active{
+	display: block;
+}
+._activeTwo img {
+	transform: rotate(540deg);
+}
+
+.content-child {
+	margin-top: 30px;
+}
+.content:last-child, .content-2:last-child, .content-3:last-child {
+	padding-bottom: 40px;
+}
+._activeTwo .headlines{
+	margin-top: 20px;
+}
+#listProfession{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+
+
+/* Выбор профессии */
+#choiceTest{
+	margin-top: 100px;
+}
+.list-test ul{
+	display: flex;
+	justify-content: space-between;
+}
+.list-test li{
+	width: 30%;
+}
+.list-test img{
+	border-radius: 3.9%;
+}
+.list-test img:hover{
+	box-shadow: 0 10px 10px -2px rgba(94, 46, 117, 0.7);
+}
+
+
+
+
+/* Медиа запросы */
+@media (max-width: 767px){
+	nav img {
+		height: 50px;
+		padding: 5px;
+	}
+	.btn{
+		padding: 0.5rem 0.7rem;
+	}
+	.posts-list {
+    margin-bottom: 6rem;
+	}
+	.posts-list-2{
+    margin-bottom: 6rem;
+	}
+	.btn:hover{
+		padding: 0.5rem 0.7rem;
+	}
+	#post-1 .btn {
+		border: 1px solid #327E95;
+	}
+	#post-1 .btn:hover {
+		border: 1px solid #327E95;
+	}
+	#conteiner h1{
+		font-size: 15px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	#infoAboutProf {
+		font-size: 13px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.content-child h3{
+		font-size: 13px;
+		text-align: start;
+	}
+	.headlines h2{
+		margin-bottom: 4px;
+	}
+	.content-child {
+		margin-top: 15px;
+	}
+	.content-child h3 {
+		margin-bottom: 5px;
+	}
+	.post {
+		margin-bottom: 6rem;
+}
+}
+@media (min-width: 768px){
+nav img {
+	height: 80px;
+	padding: 5px;
+	}
+}
+@media (min-width: 992px){
+	nav img {
+		height:100px;
+		padding: 5px;
+	}
+}
+@media (min-width: 1200px){
+nav img {
+	height: 150px;
+	padding: 5px;
+	}
+	.list-test img:hover{
+	box-shadow: 0 50px 50px -16px rgba(94, 46, 117, 0.7);
+}
+}
+
+@media (min-width: 1600px){
+	.subgroup h2, .subgroup-2 h2, .subgroup-3 h2 {
+    	font-size: calc((100vw - 480px)/(1280 - 300) * (30 - 12) + 12px);
+	}
+	.subgroup p, .subgroup-2 p, .subgroup-3 p {
+    	font-size: calc((100vw - 480px)/(1280 - 300) * (30 - 12) + 2px);
+	}
+}
+@media (min-width: 2100px) {
+	nav img {
+		height: 200px;
+		padding: 5px;
+	}		
+	
+	.post {
+		margin-bottom: 20%;
+	}
+	.subgroup h2, .subgroup-2 h2, .subgroup-3 h2 {
+    	font-size: calc((100vw - 480px)/(1280 - 300) * (30 - 12) - 4px);
+	}
+	.subgroup p, .subgroup-2 p, .subgroup-3 p {
+    	font-size: calc((100vw - 480px)/(1280 - 300) * (30 - 12) - 18px)
+	}
+		.posts-list {
+    margin-bottom: 10%;
+	}
+	.posts-list-2{
+    margin-bottom: 25%;
+	}
+
+}
