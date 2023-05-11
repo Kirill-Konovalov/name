@@ -1,0 +1,17 @@
+*, *:after, *:before {
+	padding: 0;
+	margin: 0;
+    list-style-type: none;
+    font-size: 31px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	/* добавим плавность переходов для всех элементов страницы*/
+ }
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+nav li a{
+    width: 280px;
+}
