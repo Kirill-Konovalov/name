@@ -87,8 +87,27 @@ const callback5 = () => {
     };
 
 
+const buttonSix = document.querySelector('.dropbtnSix');
+const mainContentSix = document.querySelector('.content-6')
+const subgroupSix = document.querySelector('.subgroup-6')
+
+
+const callback6 = () => {
+    if(mainContentSix.classList.contains('_active')){
+        mainContentSix.classList.remove('_active')
+        subgroupSix.classList.remove('_activeTwo')
+        // alert('remove _active')
+    }
+    else{
+        mainContentSix.classList.add('_active')
+        subgroupSix.classList.add('_activeTwo')
+        //  alert('add _active')
+    }
+    };
+
 button.addEventListener('click', callback);
 buttonTwo.addEventListener('click', callback2)
 buttonThree.addEventListener('click', callback3)
 buttonFour.addEventListener('click', callback4)
 buttonFive.addEventListener('click', callback5)
+buttonSix.addEventListener('click', callback6)
