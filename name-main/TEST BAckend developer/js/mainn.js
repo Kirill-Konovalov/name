@@ -85,7 +85,7 @@ window.onload = start
 function start(){ //выставляю вопросы
     headline.innerText = MassiveOfQuestions[step]
     for( let p = 0; p < listAnswer.length; p++){
-        console.log(MassiveOfAnswers[step][p], step, p);
+        // console.log(MassiveOfAnswers[step][p], step, p);
         listAnswerSpan[p].innerHTML = MassiveOfAnswers[step][p]
     }
 }
@@ -95,8 +95,8 @@ const furtherQuestion = () =>{
     for(let i = 0; i < listAnswer.length; i++){
         if(listAnswer[i].checked == true){
             answerGiven = true;
-            console.log(listAnswerSpan[i].innerText);
-            console.log(ArrayAnswer[step]);
+            // console.log(listAnswerSpan[i].innerText);
+            // console.log(ArrayAnswer[step]);
             if(listAnswerSpan[i].innerText == ArrayAnswer[step]){
                 scores.rights = scores.rights + 1
                 savedAnswers.push('rights')
@@ -134,8 +134,12 @@ const furtherQuestion = () =>{
             }
             console.log(wrongsAnswer);
             console.log(scores);
-            if(step < 48){ //до это момента стоят чекбоксы
+            if(step < 48 && headline.innerText != "Как включить поддержку административной панели в Django?"){ //до это момента стоят чекбоксы
                 step = step + 1;
+            }
+            else if(step < 58 && headline.innerText != "Какая коллекция в Java используется для хранения элементов без повторений?"){
+                step = step + 1;
+                console.log(headline.innerText);
             }
             else{
                 showResult();
@@ -151,6 +155,8 @@ const furtherQuestion = () =>{
 
     }
 }
+
+
 
 
 const backQuestion = () =>{
