@@ -1,7 +1,7 @@
 MassiveOfQuestions = ['Какой язык программирования применяется для работы с базами данных MySQL?',
 'Каким образом можно выбрать все записи из таблицы "users", где данные в поле "username" начинаются с буквы "A"?', 
 'Каким образом можно выбрать максимальное значение поля "age" из таблицы "users"?', 'Каким образом можно создать новую таблицу "products" с полями "id", "name" и "price"?', 'Каким образом можно удалить все записи из таблицы "orders", где статус равен "canceled"?', "Какой тип нереляционных баз данных наиболее часто используется?", "Какой тип нереляционных баз данных наиболее эффективен для хранения данных в виде JSON-документов?", "В чем отличие нереляционных баз данных от реляционных?", "Какие из этих баз данных можно использовать для хранения больших объемов данных и обеспечения горизонтального масштабирования?", "Каким образом можно получить данные из нереляционной базы данных?", 
-"Что такое полиморфизм?", "Что такое инкапсуляция?", "Что такое абстрактный класс?", "Что такое интерфейс?", "Что означает аббревиатура REST?", "Какие операции HTTP используются в RESTful API?", "Что такое ресурс в RESTful API? ", "Какой формат данных обычно используется в RESTful API для передачи информации?", "Что означает код ответа HTTP 404 в RESTful API?", "Что означает аббревиатура VCS?", "Какая команда используется для создания новой ветки в git?", "Какие команды используются для отправки изменений из локального репозитория в удаленный?", "Какая команда используется для объединения двух веток в git?", "Что произойдет, если в удаленный репозиторий были добавлены изменения, которых нет в локальной версии, и была использована команда git pull?",
+"Что такое наследование?","Что такое полиморфизм?", "Что такое инкапсуляция?", "Что такое абстрактный класс?", "Что такое интерфейс?", "Что означает аббревиатура REST?", "Какие операции HTTP используются в RESTful API?", "Что такое ресурс в RESTful API? ", "Какой формат данных обычно используется в RESTful API для передачи информации?", "Что означает код ответа HTTP 404 в RESTful API?", "Что означает аббревиатура VCS?", "Какая команда используется для создания новой ветки в git?", "Какие команды используются для отправки изменений из локального репозитория в удаленный?", "Какая команда используется для объединения двух веток в git?", "Что произойдет, если в удаленный репозиторий были добавлены изменения, которых нет в локальной версии, и была использована команда git pull?",
 "Что такое Shell в Linux?", "Какая команда используется для просмотра содержимого текущей директории в терминале Linux?", "Какая команда используется для перемещения файлов и директорий в терминале Linux?", "Какая команда используется для завершения работы сессии терминала в Linux?", "Как называется структура данных, в которой элементы хранятся в порядке их добавления?", "Какой алгоритм нужно использовать для поиска минимального элемента в неотсортированном массиве?", "Какой алгоритм сортировки имеет худшую временную сложность O(n^2)?", "Что такое хеш-таблица?", "Какие типы данных могут быть использованы в структурах данных?", 
 "Что такое unit-тесты?", "Какие виды тестирования существуют?", "Что такое отладка (debugging)?", "Что такое сценарий (scenario)?", "Какой тип тестирования позволяет обнаружить ошибки в работе приложения под высокой нагрузкой?", "Выберите язык программирования",
 "Чем отличается функция от метода в Python?", "Как проверить, что две переменные ссылаются на один и тот же объект?", "Какой символ обозначает комментарий в Python?", "С помощью какого оператора можно добавить элемент в конец списка в Python?", "Какой модуль нужно импортировать в Python, чтобы работать с файлами?", //Python
@@ -23,7 +23,7 @@ MassiveOfAnswers = [['SQL', 'Java', 'Python', 'Ruby', 'PHP'],
 ["DELETE FROM orders WHERE status = 'canceled'", "TRUNCATE orders WHERE status = 'canceled'", "UPDATE orders SET status = 'completed' WHERE status = 'canceled'", "DROP orders WHERE status = 'canceled'", "SELECT orders WHERE status = 'canceled'"],
 ["Ключ-значение", "Графовые базы данных", "Семейства документов", "Столбцовые базы данных", "Реляционные базы данных"], ["Ключ-значение", "Графовые базы данных", "Семейства документов", "Столбцовые базы данных", "Реляционные базы данных"], ["Нереляционные базы данных не поддерживают SQL", "Нереляционные базы данных не имеют жесткой структуры", "Нереляционные базы данных не могут хранить связанные данные", "Нереляционные базы данных не предназначены для хранения больших объемов данных", "Нереляционные базы данных применяются только для хранения текстовых данных"], ["Ключ-значение", "Семейства документов", "Столбцовые базы данных", "Реляционные базы данных", "Все вышеперечисленные базы данных"],
 ["SQL-запросы", "Cypher-запросы", "CQL-запросы", "С помощью документо-ориентированных библиотек", "С помощью ORM (Object-Relational Mapping)"],
-["Возможность создания нескольких объектов одного класса", "Возможность изменения параметров объекта во время выполнения программы", "Возможность получения свойств и методов родительского класса в дочернем классе", "Механизм, позволяющий методам дочернего класса вызывать методы родительского класса", "Механизм, позволяющий изменять связи между объектами"], ["Возможность создания объектов на основе абстрактных классов или интерфейсов", "Возможность доступа к объектам класса из любой части программы", "Возможность переопределения методов родительского класса в дочерних классах", "Возможность использования одного и того же метода для разных типов данных", "Возможность создания объектов с динамическим типом данных"], ["Возможность создания классов с несколькими уровнями доступа к переменным и методам", "Возможность создания объектов на основе абстрактных классов или интерфейсов", "Возможность изменения параметров объекта во время выполнения программы", "Возможность доступа к объектам класса из любой части программы", "Механизм, позволяющий методам дочернего класса вызывать методы родительского класса"], ["Класс, у которого не может быть создан объект", "Класс, который не может содержать абстрактных методов", "Класс, который содержит только статические методы", "Класс, который может наследоваться только один раз", "Класс, который не может быть унаследован"], ["Класс, который может содержать только конструкторы", "Способ связи объектов между собой", "Язык программирования для создания веб-приложений", "Описание методов, которые должны быть реализованы классом, реализующим интерфейс", "Способ передачи параметров между методами одного класса"]
+["Возможность создания нескольких объектов одного класса", "Возможность изменения параметров объекта во время выполнения программы", "Возможность получения свойств и методов родительского класса в дочернем классе", "Механизм, позволяющий методам дочернего класса вызывать методы родительского класса", "Механизм, позволяющий изменять связи между объектами"], ["Возможность создания объектов на основе абстрактных классов или интерфейсов", "Возможность доступа к объектам класса из любой части программы", "Возможность переопределения методов родительского класса в дочерних классах", "Возможность использования одного и того же метода для разных типов данных", "Возможность создания объектов с динамическим типом данных"], ["Возможность создания классов с несколькими уровнями доступа к переменным и методам", "Возможность создания объектов на основе абстрактных классов или интерфейсов", "Возможность изменения параметров объекта во время выполнения программы", "Возможность доступа к объектам класса из любой части программы", "Механизм, позволяющий методам дочернего класса вызывать методы родительского класса"], ["Класс, у которого не может быть создан объект", "Класс, который не может содержать абстрактных методов", "Класс, который содержит только статические методы", "Класс, который может наследоваться только один раз", "Класс, который не может быть унаследован"], ["Класс, который может содержать только конструкторы", "Способ связи объектов между собой", "Язык программирования для создания веб-приложений", "Описание методов, которые должны быть реализованы классом, реализующим интерфейс", "Способ передачи параметров между методами одного класса"],
 ["Расширенный стандарт передачи состояния", "Представление состояния передачи", "Представление перенаправления", "Передача состояния с помощью HTTP", "Представление передачи состояни"], ["GET, POST, PUT, DELETE", "GET, POST, UPDATE, DELETE", "INSERT, SELECT, UPDATE, DELETE", "REQUEST, RESPONSE, INSERT, DELETE", "GET, REQUEST, RESPONSE, DELETE"], ["Пароль для доступа к API", "URL-адрес, по которому можно получить данные", "Данные, которые возвращаются в ответ на запрос", "Алгоритм шифрования, используемый в API", "Метод, который используется для запроса данных"], ["XML", "JSON", "HTML", "CSV", "TXT"], ["Ресурс не найден", "Необходимо войти в систему для доступа к ресурсу", "Недостаточно прав для выполнения операции", "Сервер временно недоступен", "Ошибка валидации переданных данных"],
 ["Visual Code Studio", "Version Control System", "Visual Control System", "Version Communication System", "Visual Communication Studio"], ["git status", "git branch", "git commit", "git log", "git checkout"], ["git init, git add, git commit", "git clone, git push", "git log, git branch, git merge", "git pull, git status", "git checkout, git stash"], ["git push", "git clone", "git merge", "git checkout", "git rebase"], ["Локальная версия будет обновлена до версии в удаленном репозитории.", "Локальная версия будет перезаписана версией в удаленном репозитории.", "Локальная версия будет объединена с изменениями из удаленного репозитория.", "Локальная версия будет удалена.", "Никаких изменений не произойдет."],
 ["Интерфейс для работы с файловой системой", "Текстовый редактор", "Графический интерфейс пользователя", "Командная оболочка для работы в терминале", "Ядро операционной системы"], ["list", "dir", "cd", "pwd", "ls"], ["touch", "cat", "rm", "mkdir", "chmod"], ["shutdown", "poweroff", "exit", "log-off", "close"], 
@@ -37,9 +37,7 @@ MassiveOfAnswers = [['SQL', 'Java', 'Python', 'Ruby', 'PHP'],
 ["create object;", "new object;", "Object.create;", "object.New;", "Объекты создаются автоматически при объявлении переменной"], ["Integer", "Float", "Double", "String", "Char"],['string MyString = "This is a string";', 'MyString = "This is a string";', 'MyString : "This is a string";', '[MyString] = "This is a string";', '"This is a string"'],["int myMethod {return 0};", "[int]myMethod() { return 0; }", "int myMethod() { return 0; }", "void myMethod() { return; }", "myMethod = int { return 0; }"],["==", "=", "===", "<=>", "#"],["C#", "#", "Ruby", "VB.NET", "C++/CLI"],["Методология для сборки мусора в компьютерных программах.", "Компонент фреймворка, который обеспечивает автоматическую сборку мусора.", "Особенность операционной системы, обеспечивающая более быструю разработку приложений.", "Административный инструмент для управления ресурсами компьютера.", "Никакой из вышеперечисленных вариантов."],["Дизайнерские элементы, помогающие визуально оформить приложение.", "Механизм, позволяющий использовать библиотеки и компоненты из других языков.", "Маркеры, которые могут быть добавлены компонентами кода для предоставления дополнительной информации о том, как использовать компоненты  кода.", "Библиотеки классов для создания пользовательских компонентов управления.", "Средства для управления потоками в приложении."],["Язык программирования, разработанный компанией Microsoft.", "Расширение языка C#, позволяющее создавать более короткий и выразительный код для работы с данными.", "Фреймворк для написания многопоточных приложений.", "База данных, используемая для хранения нформации о приложении.", "Средство для компиляции кода в байт-код исполнения его на любой платформе."],["Библиотека,содержащая класссы для работы с сетевыми протоколами.", "Менеджер пакетов, позволяющий устанавливать и обновлять сторонние библиотеки и компоненты в проектах .NET.", "Опциональный компонент, который позволяет компилировать и выполнять код в браузере.", "Библиотека, содержащая классы для работы с графическими интерфейсами.", "Фреймворк для создания распределенных систем."],
 ["object = Object.new", "new Object = object", "object.new(Object)", "ObjectCreate(object)", "object.create(Object)"], ["variable MyVariable", "MyVariable = Variable.new", "MyVariable = value", "new MyVariable", "variable MyVariable = value"], ["def myMethod", "method myMethod", "myMethod = def", "define myMethod", "myMethod(def)"], ["'This is a string'", '"This is a string"', "string MyString = 'This is a string'", 'MyString = "This is a string"', 'string MyString = "This is a string"'], ["==", "=", "===", "<=>", "#"], ["rails new project_name", "project_name new rails", "new_rails project_name", "create_rails project_name", "create_new project_name rails"], ["Использовать генератор модели rails generate model MyModel", "Создать новый класс-модель вручную в директории app/models", "Использовать миграции rails db:migrate", "Обновить базу данных вручную используя SQL-запросы", "Создать новую базу данных из консоли rails db:create"], ["Использовать генератор контроллера rails generate controller MyController", "Создать новый класс-контроллер вручную в директории app/controllers", "Использовать миграции rails db:migrate", "Обновить базу данных вручную используя SQL-запросы", "Создать новую базу данных из консоли rails db:create"], ["Использовать метод get или post в конфигурационном файле routes.rb", "Использовать метод route в конфигурационном файле routes.rb", "Создать новый класс-маршрут в директории app/routes", "Использовать метод redirect в конфигурационном файле routes.rb", "Создать новый файл маршрутов и добавить его в директорию config/routes"], ["Включение поддержки аутентификации в Rails происходит автоматически при создании нового проекта.", "Для включения поддержки аутентификации нужно установить сторонний гем (например, devise)", "В config/application.rb нужно раскомментировать соответствующие настройки и создать файл user.rb в директории app/models", "В app/helpers нужно создать файл authentication_helper.rb и включить его в представлениях.", "Поддержка аутентификации в Rails отключена по умолчанию."]]
 
-// pythonQuestions = ["Чем отличается функция от метода в Python?", "Как проверить, что две переменные ссылаются на один и тот же объект?"]
-// pythonAnswers = [['A', 'B', 'C', 'D', "E"], ['A', 'B', 'C', 'D', "E"]]
-// ArrayPythonAnsew = ['A', 'E']
+
 
 
 
@@ -62,7 +60,10 @@ let scores = {
     linux: 0,
     alg: 0,
     testing: 0,
-    programming: 0
+    programming: 0,
+    frameworks: 0,
+    wrongs:0,
+    rights:0
 }
 
 
@@ -80,6 +81,14 @@ let answerGiven = false;
 let choice =  ''
 let step = 0
 const baseData = document.querySelector('#baseData')
+const gitH = document.querySelector('#git')
+const oop = document.querySelector('#OOP')
+const restApi = document.querySelector('#RESTful API')
+const linux = document.querySelector('#linux')
+const algorithms = document.querySelector('#algorithms')
+const testing = document.querySelector('#testing')
+const programmingVid = document.querySelector('#programming')
+const frameworks = document.querySelector("#frameworks")
 let listAnswerSpan = document.getElementsByTagName('span')
 let flPython = 0
 let flJava = 0
@@ -95,9 +104,9 @@ console.log(step);
 window.onload = start 
 
 function start(){ //выставляю вопросы
+    console.log(oop.style.height);
     headline.innerText = MassiveOfQuestions[step]
     for( let p = 0; p < listAnswer.length; p++){
-        // console.log(MassiveOfAnswers[step][p], step, p);
         listAnswerSpan[p].innerHTML = MassiveOfAnswers[step][p]
     }
 }
@@ -111,27 +120,56 @@ const furtherQuestion = () =>{
             console.log(ArrayAnswer[step]);
             console.log(step);
             if(listAnswerSpan[i].innerText == ArrayAnswer[step]){
-                if(step < 11){
+                if(step < 10){
                     scores.bases = scores.bases + 1
                 }
-                else if(step < 16 && step > 11){
+                else if(step < 15 && step >= 10){
                     scores.api = scores.api + 1
                 }
-                else if(step < 26 && step > 16){
+                else if(step < 20 && step >= 15){
                     scores.git = scores.git + 1
                 }
-                else if(step < 31 && step > 26){
+                else if(step < 25 && step >= 20){
                     scores.linux = scores.linux + 1
                 }
-                else if(step < 36 && step > 31){
+                else if(step < 35 && step >= 35){
                     scores.alg = scores.alg + 1
                 }
-                else if(step < 41 && step > 36){
+                else if(step < 40 && step >= 35){
                     scores.testing = scores.testing + 1
                 }
-                else if(step < 46 && step > 41){
+                else if(step < 45 && step >= 40 ){
                     scores.programming = scores.programming + 1
                 }
+                else if(step < 50 && step >= 45){
+                    scores.frameworks = scores.frameworks + 1
+                }
+                else if(step < 55 && step >= 50){
+                    scores.programming = scores.programming + 1
+                }
+                else if(step < 60 && step >= 55){
+                    scores.frameworks = scores.frameworks + 1
+                }
+                else if(step < 65 && step >= 60){
+                    scores.programming = scores.programming + 1
+                }
+                else if(step < 70 && step >= 65){
+                    scores.frameworks = scores.frameworks + 1
+                }
+                else if(step < 75 && step >= 70){
+                    scores.programming + scores.programming + 1
+                }
+                else if(step < 80 && step >= 75){
+                    scores.frameworks = scores.frameworks + 1
+                }
+                else if(step < 85 && step >= 80){
+                    scores.programming + scores.programming + 1
+                }
+                else if(step < 90 && step >= 85){
+                    scores.frameworks = scores.frameworks + 1
+                }
+
+
                 scores.rights = scores.rights + 1
                 savedAnswers.push('rights')
                 step = step + 1
@@ -142,7 +180,9 @@ const furtherQuestion = () =>{
                 wrongsAnswer.push(listAnswerSpan[i].innerText)
                 step = step + 1
             }
-            if(step == 39){
+
+
+            if(step == 40){
             switch (listAnswerSpan[i].innerText){ //Выбор языка програмирования
                 case "Python":
                     alert('Ты выбрал Python')
@@ -172,19 +212,19 @@ const furtherQuestion = () =>{
                     break
             }
             }
-            if(step == 49 && flPython == 1 ){ //до это момента стоят чекбоксы
+            if(step == 50 && flPython == 1 ){ //до это момента стоят чекбоксы
                 showResult();
             }
-            else if(step == 59 && flJava == 1 ){
+            else if(step == 60 && flJava == 1 ){
                 showResult();
                 console.log(headline.innerText);
-            }else if(step == 69 && flPhp == 1 ){
+            }else if(step == 70 && flPhp == 1 ){
                 showResult();
             }
-            else if(step == 79 && flCSharp == 1 ){
+            else if(step == 80 && flCSharp == 1 ){
                 showResult();
             }
-            else if(step == 89 && flRuby == 1){
+            else if(step == 90 && flRuby == 1){
                 showResult();
             }
             // else if{
@@ -212,23 +252,81 @@ const backQuestion = () =>{
             answerGiven = true;
             // choice = listAnswer[i].value
             scores[savedAnswers[step - 1]] = scores[savedAnswers[step - 1]] - 1
-            savedAnswers.pop()
             if(step != 0){ 
                 step = step - 1;
             }
-            if(step == 48){
+
+            if(savedAnswers[savedAnswers.length - 1] == 'rights'){
+            if(step < 10){
+                    scores.bases = scores.bases - 1
+                }
+                else if(step < 15 && step >= 10){
+                    scores.api = scores.api - 1
+                }
+                else if(step < 20 && step >= 15){
+                    scores.git = scores.git - 1
+                }
+                else if(step < 25 && step >= 20){
+                    scores.linux = scores.linux - 1
+                }
+                else if(step < 35 && step >= 35){
+                    scores.alg = scores.alg - 1
+                }
+                else if(step < 40 && step >= 35){
+                    scores.testing = scores.testing - 1
+                }
+                else if(step < 45 && step >= 40 ){
+                    scores.programming = scores.programming - 1
+                }
+                else if(step < 50 && step >= 45){
+                    scores.frameworks = scores.frameworks - 1
+                }
+                else if(step < 55 && step >= 50){
+                    scores.programming = scores.programming - 1
+                }
+                else if(step < 60 && step >= 55){
+                    scores.frameworks = scores.frameworks - 1
+                }
+                else if(step < 65 && step >= 60){
+                    scores.programming = scores.programming - 1
+                }
+                else if(step < 70 && step >= 65){
+                    scores.frameworks = scores.frameworks - 1
+                }
+                else if(step < 75 && step >= 70){
+                    scores.programming + scores.programming - 1
+                }
+                else if(step < 80 && step >= 75){
+                    scores.frameworks = scores.frameworks - 1
+                }
+                else if(step < 85 && step >= 80){
+                    scores.programming + scores.programming - 1
+                }
+                else if(step < 90 && step >= 85){
+                    scores.frameworks = scores.frameworks - 1
+                }
+            }
+
+
+
+            if(step == 49){
                 step = step - 10
                 console.log("Step - 10");
+                flJava = 0
             }
-            if(step == 58){
+            if(step == 59){
                 step = step - 20
+                flPhp = 0
             }
-            if(step == 68){
+            if(step == 69){
                 step = step - 30
+                flCSharp = 0
             }
-            if(step == 78){
+            if(step == 79){
                 step = step - 40
+                flRuby = 0
             }
+            savedAnswers.pop()
             // console.log(step);
             numberQuestion.innerText = step + 1
             start();
@@ -243,10 +341,32 @@ function showResult(){
     alert('ТЫ прошёл тест!')
     result.classList.remove('_active')
     test.classList.add('_active')
-    procent =  scores.rights * 100 / 11 + '%'
-    baseData.style.width = procent
-    console.log(procent);
+
+    procentBases =  scores.bases * 100 / 10 + '%'
+    baseData.style.width = procentBases
     
+    procentOop =  scores.oop * 100 / 5 + '%'
+    oop.style.width = procentOop
+
+    procentApi =  scores.api * 100 / 5 + '%'
+    restApi.style.width = procentApi
+
+    procentLinux =  scores.linux * 100 / 5 + '%'
+    linux.style.width = procentLinux
+
+    procentAlg =  scores.alg * 100 / 5 + '%'
+    algorithms.style.width = procentAlg
+
+    procentTest =  scores.testing * 100 / 5 + '%'
+    testing.style.width = procentTest
+    
+    procentProgram =  scores.programming * 100 / 5 + '%'
+    programmingVid.style.width = procentProgram
+
+    procentFrame =  scores.frameworks * 100 / 5 + '%'
+    frameworks.style.width = procentFrame
+
+    console.log(procentFrame, procentApi);
 }
 further.addEventListener('click', furtherQuestion);
 back.addEventListener('click', backQuestion);
