@@ -55,6 +55,7 @@ ArrayAnswer = ['PHP',"SELECT * FROM users WHERE username LIKE 'A%'", "SELECT MAX
 
 let scores = {
     bases: 0,
+    ScoresOop:0,
     api: 0,
     git: 0,
     linux: 0,
@@ -104,7 +105,7 @@ console.log(step);
 window.onload = start 
 
 function start(){ //выставляю вопросы
-    console.log(oop.style.height);
+    console.log(oop.style);
     headline.innerText = MassiveOfQuestions[step]
     for( let p = 0; p < listAnswer.length; p++){
         listAnswerSpan[p].innerHTML = MassiveOfAnswers[step][p]
@@ -122,6 +123,9 @@ const furtherQuestion = () =>{
             if(listAnswerSpan[i].innerText == ArrayAnswer[step]){
                 if(step < 10){
                     scores.bases = scores.bases + 1
+                }
+                else if(step < 15 && step >= 10){
+                    scores.ScoresOop = scores.ScoresOop + 1
                 }
                 else if(step < 15 && step >= 10){
                     scores.api = scores.api + 1
@@ -345,7 +349,7 @@ function showResult(){
     procentBases =  scores.bases * 100 / 10 + '%'
     baseData.style.width = procentBases
     
-    procentOop =  scores.oop * 100 / 5 + '%'
+    procentOop =  scores.ScoresOop * 100 / 5 + '%'
     oop.style.width = procentOop
 
     procentApi =  scores.api * 100 / 5 + '%'
@@ -366,7 +370,7 @@ function showResult(){
     procentFrame =  scores.frameworks * 100 / 5 + '%'
     frameworks.style.width = procentFrame
 
-    console.log(procentFrame, procentApi);
+    console.log(procentBases, procentFrame, procentApi);
 }
 further.addEventListener('click', furtherQuestion);
 back.addEventListener('click', backQuestion);
