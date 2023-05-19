@@ -84,12 +84,13 @@ let step = 0
 const baseData = document.querySelector('#baseData')
 const gitH = document.querySelector('#git')
 const oop = document.querySelector('#OOP')
-const restApi = document.querySelector('#RESTful API')
+const restApi = document.querySelector('#RESTfulAPI')
 const linux = document.querySelector('#linux')
 const algorithms = document.querySelector('#algorithms')
 const testing = document.querySelector('#testing')
 const programmingVid = document.querySelector('#programming')
 const frameworks = document.querySelector("#frameworks")
+const backend = document.querySelector('#backendDeveloper')
 let listAnswerSpan = document.getElementsByTagName('span')
 let flPython = 0
 let flJava = 0
@@ -99,13 +100,11 @@ let flRuby = 0
 
 
 
-console.log(step);
 
 
 window.onload = start 
 
 function start(){ //выставляю вопросы
-    console.log(oop.style);
     headline.innerText = MassiveOfQuestions[step]
     for( let p = 0; p < listAnswer.length; p++){
         listAnswerSpan[p].innerHTML = MassiveOfAnswers[step][p]
@@ -117,9 +116,6 @@ const furtherQuestion = () =>{
     for(let i = 0; i < listAnswer.length; i++){
         if(listAnswer[i].checked == true){
             answerGiven = true;
-            console.log(listAnswerSpan[i].innerText);
-            console.log(ArrayAnswer[step]);
-            console.log(step);
             if(listAnswerSpan[i].innerText == ArrayAnswer[step]){
                 if(step < 10){
                     scores.bases = scores.bases + 1
@@ -235,7 +231,6 @@ const furtherQuestion = () =>{
             //     step = step + 1
             // }
             // console.log(step);
-            console.log(scores);
             numberQuestion.innerText = step + 1
             start();
             // console.log(choice);
@@ -331,10 +326,9 @@ const backQuestion = () =>{
                 flRuby = 0
             }
             savedAnswers.pop()
-            // console.log(step);
             numberQuestion.innerText = step + 1
             start();
-            // console.log(choice);
+            
         }
     }
 }
@@ -346,28 +340,30 @@ function showResult(){
     result.classList.remove('_active')
     test.classList.add('_active')
 
-    procentBases =  scores.bases * 100 / 10 + '%'
+    let procetbackend = scores.rights * 100 / 50 + '%'
+    backend.style.width = procetbackend
+    let procentBases =  scores.bases * 100 / 10 + '%'
     baseData.style.width = procentBases
     
     procentOop =  scores.ScoresOop * 100 / 5 + '%'
     oop.style.width = procentOop
 
-    procentApi =  scores.api * 100 / 5 + '%'
+    let procentApi =  scores.api * 100 / 5 + '%'
     restApi.style.width = procentApi
 
-    procentLinux =  scores.linux * 100 / 5 + '%'
+    let procentLinux =  scores.linux * 100 / 5 + '%'
     linux.style.width = procentLinux
 
-    procentAlg =  scores.alg * 100 / 5 + '%'
+    let procentAlg =  scores.alg * 100 / 5 + '%'
     algorithms.style.width = procentAlg
 
-    procentTest =  scores.testing * 100 / 5 + '%'
+    let procentTest =  scores.testing * 100 / 5 + '%'
     testing.style.width = procentTest
     
-    procentProgram =  scores.programming * 100 / 5 + '%'
+    let procentProgram =  scores.programming * 100 / 5 + '%'
     programmingVid.style.width = procentProgram
 
-    procentFrame =  scores.frameworks * 100 / 5 + '%'
+    let procentFrame =  scores.frameworks * 100 / 5 + '%'
     frameworks.style.width = procentFrame
 
     console.log(procentBases, procentFrame, procentApi);
