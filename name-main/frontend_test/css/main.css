@@ -110,10 +110,6 @@ input{
   margin: 0 4%;
   font-size: 2vw;
 }
-.container .btnFurther, .btnBack{
-  font-size: 20px;
-  margin: 0;
-}
 
 
 ._active{

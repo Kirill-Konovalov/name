@@ -54,7 +54,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.btn:hover, .btnFurther:hover, .btnBack:hover{
+.btn:hover,.btnBack:hover, .btnFurther:hover{
   font-size: 2vw;
   display: inline-block;
   /* Строчно-блочный элемент */
@@ -85,7 +85,6 @@ header {
 h1 {
   text-align: center;
   font-size: 3vw;
-  margin-bottom: 5%;
 }
 .qestions{
   margin-top: 30px;
@@ -110,45 +109,13 @@ input{
   margin: 0 4%;
   font-size: 2vw;
 }
-.container .btnFurther, .btnBack{
-  font-size: 20px;
-  margin: 0;
-}
 
 
 ._active{
   display: none;
 }
-#result article{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#result section{
-  width: 100%;
-  height: 40px;
-  border: 1px solid black;
-  margin-bottom: 5%;
-  border-radius: 20px;
-}
-#result section:last-child{
-  margin: 0;
-}
 
-.occupancy{
-  height: 100%;
-  border-radius: 20px;
-  width: 40%;
-  background-color: #327E95;
-  float: left;
-  display: flex;
-  align-items: center;
-}
-.occupancy h4{
-  margin-left: 20px;
-  font-size: 1vw;
 
-}
 footer {
 	position: absolute;
 	height: 80px;
@@ -198,4 +165,37 @@ footer {
 	margin: auto;
 	margin-left: 13%;
 	margin-right: 13%;
+}
+
+#result article{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#result section{
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+#result section:last-child{
+  margin: 0;
+}
+
+.occupancy{
+  height: 100%;
+  border-radius: 20px;
+  width: 40%;
+  background-color: #327E95;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.occupancy h4{
+  margin-left: 20px;
+  font-size: 1vw;
+}
+#result h1{
+  margin-bottom: 8%;
 }
