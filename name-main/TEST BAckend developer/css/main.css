@@ -150,43 +150,26 @@ input{
 
 }
 
+
+
 footer {
-	position: absolute;
+	/* position: absolute; */
 	height: 80px;
 	width: 100%;
 	background: #327E95;
 	color: white;
 	margin-top: 20%;
 }
-.footer-col span{
-	position: table;
-	font-size: x-small;
+ .social-bar-wrap h4{
 	color: #fff;
-	margin-left: 10%;
-}
-.footer-col {
-	width: 33.3333333333%;
-	float: left;
-	line-height: 80px;
-}
-.footer-col a {
-	color: white;
-}
-.footer-col:last-child {
-	text-align: right;
-	padding-right: 15px;
-}
-.social-bar-wrap {
-	text-align: center;
-}
-.social-bar-wrap a {
-	padding-right: 7px;
-	font-size: 18px;
-}
-.posts-list {
-	display: inline-block;
-	width: 80%;
-	margin-left: 10%;
-	max-height: 50%;
-	margin-bottom: 10rem;
-}
+ }
+ .social-bar-wrap ul{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .social-bar-wrap img{
+	margin-left: 5px;
+	width: 20px;
+ }
+ 
