@@ -168,8 +168,6 @@ const furtherQuestion = () =>{
                 else if(step < 90 && step >= 85){
                     scores.frameworks = scores.frameworks + 1
                 }
-
-
                 scores.rights = scores.rights + 1
                 savedAnswers.push('rights')
                 step = step + 1
@@ -227,13 +225,23 @@ const furtherQuestion = () =>{
             else if(step == 90 && flRuby == 1){
                 showResult();
             }
-            // else if{
-            //     step = step + 1
-            // }
-            // console.log(step);
-            numberQuestion.innerText = step + 1
+
+            if(step < 50){
+                numberQuestion.innerText = step + 1
+            }
+            else if(step >= 50 && flJava == 1){
+                numberQuestion.innerText = step - 9
+            }
+            else if(step >= 60 && flPhp == 1){
+                numberQuestion.innerText = step - 19
+            }
+            else if(step >= 70 && flCSharp == 1){
+                numberQuestion.innerText = step - 29
+            }
+            else if(step >= 80 && flRuby == 1){
+                numberQuestion.innerText = step - 39
+            }
             start();
-            // console.log(choice);
         }
     }
     if(answerGiven == false){
