@@ -374,7 +374,6 @@ function showResult(){
     let procentFrame =  scores.frameworks * 100 / 5 + '%'
     frameworks.style.width = procentFrame
 
-    console.log(procentBases, procentFrame, procentApi);
 }
 further.addEventListener('click', furtherQuestion);
 back.addEventListener('click', backQuestion);

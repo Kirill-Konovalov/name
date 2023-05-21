@@ -123,6 +123,11 @@ footer {
 	background: #327E95;
 	color: white;
 	margin-top: 20%;
+  font-size: 1vw;
+ }
+ label{
+    display: flex;
+    align-items: center;
  }
  .footer-col span{
 	position: table;

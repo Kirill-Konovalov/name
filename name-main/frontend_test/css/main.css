@@ -110,7 +110,10 @@ input{
   margin: 0 4%;
   font-size: 2vw;
 }
-
+label{
+    display: flex;
+    align-items: center;
+}
 
 ._active{
   display: none;
@@ -152,6 +155,7 @@ footer {
 	background: #327E95;
 	color: white;
 	margin-top: 20%;
+  font-size: 1vw;
  }
  .footer-col span{
 	position: table;

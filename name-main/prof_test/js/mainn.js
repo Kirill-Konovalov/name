@@ -57,9 +57,7 @@ const furtherQuestion = () =>{
             answerGiven = true;
             choice = listAnswer[i].value
             savedAnswers.push(choice)
-            console.log(savedAnswers);
             scores[choice] = scores[choice] + 1
-            console.log(scores);
             if(choice == 'a'){
                 scores.design = scores.design + 1
                 scores.marketing = scores.marketing + 1

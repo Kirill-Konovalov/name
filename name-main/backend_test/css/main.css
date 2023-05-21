@@ -95,6 +95,8 @@ h1 {
 }
 label {
   margin-bottom: 1%;
+  display: flex;
+  align-items: center;
 }
 input{
   margin-right: 5px;
@@ -150,6 +152,7 @@ footer {
 	background: #327E95;
 	color: white;
 	margin-top: 20%;
+  font-size: 1vw;
  }
  .footer-col span{
 	position: table;
